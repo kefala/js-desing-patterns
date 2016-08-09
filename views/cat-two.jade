@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1(id="title") #{title}
+  h2(id="subTitle") #{subTitle}
+  p#counter
+  p#counter-two
+block scripts
+  script(data-main="javascripts/cat-two/required", src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js")

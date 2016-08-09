@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1(id="title") #{title}
+  p#counter
+block scripts
+  script(data-main="javascripts/cat-one/required", src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js")
