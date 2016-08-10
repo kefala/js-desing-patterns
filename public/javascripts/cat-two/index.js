@@ -6,6 +6,7 @@ define(['cats'], function(cats) {
                 cat.nodeCat = (cat.nodeCat) ? cat.nodeCat : document.getElementById(cat.nodeCatId);
                 cat.node = (cat.node) ? cat.node : document.getElementById(cat.nodeId);
                 cat.node.innerText = cat.counterClicks.toString();
+                
                 cat.nodeCat.innerText += " " + cat.name;
                 cat.nodeCat.addEventListener('click', function() {
                     cat.counterClicks++;
